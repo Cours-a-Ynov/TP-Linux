@@ -5,20 +5,20 @@
 Je fait ce document en prenant compte que vous connaissez un minimum les base des commandes linux.
 ## Sommaire :
 1) [TPn°1 Services réseaux "17/09/2021"]()
-    a) [Mettre en place une machine virtuelle]()
-    b) [Configurer les services réseaux]()
-    c) [Configurer un outil de gestion de ticket]()
-    d) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
-    e) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
-    f) [Mettre en place une sauvegarde de GLPI]()
-    g) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
-    h) [Installer et configurer le service de messagerie.]()
-    i) [Installer et configurer le plugin d’envoi de mail.]()
-    j) [Source]()
+    a. [Mettre en place une machine virtuelle]()
+    b. [Configurer les services réseaux]()
+    c. [Configurer un outil de gestion de ticket]()
+    d. [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
+    e. [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
+    f. [Mettre en place une sauvegarde de GLPI]()
+    g. [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
+    h. [Installer et configurer le service de messagerie.]()
+    i. [Installer et configurer le plugin d’envoi de mail.]()
+    j. [Source]()
 2) [TPn°2 Services réseau]()
-    a)
+    a.
 3) [TPn°3 Services réseaux]()
-    a)
+    a.
 4) [Mot a retenir]()
 
 ***
