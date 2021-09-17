@@ -413,16 +413,16 @@ pour avoir un rapport détaillé de ce qui s’est déroulé.
 ## 9- Installer et configurer le plugin d’envoi de mail (option).
 
 Dans cette partie nous allons utiliser Outlook version 2010.Avant toutes choses, il faut savoir ce qu’est un serveur pop et smtp:
-•Pop.[nomDeDomaine] représente le serveur de courrier entrant
-•Smtp.[nomDeDomaine] représente le serveur de courrier sortant
+- Pop.[nomDeDomaine] représente le serveur de courrier entrant
+- Smtp.[nomDeDomaine] représente le serveur de courrier sortant
 Actuellement, notre serveur de messagerie n’est pas capable d’utiliser les serveurs pop et smtp.
 
 Pour cela, nous devons procéder à l’installation de ces derniers:
-•apt-get install courier-authdaemon courier-base courier-imap courier-maildrop courier-pop courier-pop-ssl courier-imap-ssl
-•Aller dans l’onglet Fichier de Outlook
-•Cliquez sur Ajouter un compte•Configurer Manuellement les paramètres du serveur
-•Messagerie internet
-•Remplir le formulaire :
+- apt-get install courier-authdaemon courier-base courier-imap courier-maildrop courier-pop courier-pop-ssl courier-imap-ssl
+- Aller dans l’onglet Fichier de Outlook
+- Cliquez sur Ajouter un compte•Configurer Manuellement les paramètres du serveur
+- Messagerie internet
+- Remplir le formulaire :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/mail1.png)
 
 ***
