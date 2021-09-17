@@ -22,7 +22,11 @@ Pour installer **Debian11** il va falloir [Cliquez sur ce lien](https://cdimage.
 
 Ainsi que **VMWorkstation** [Télécharger](https://www.vmware.com/go/getworkstation-win) et faites une installation classique de logiciel.
 
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/Creation1.png)
 
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation2.png)
+
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation3.png)
 
 ***
 ## 2- Configurer les services réseaux
