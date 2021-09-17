@@ -34,7 +34,8 @@ Je fait ce document en prenant compte que vous connaissez un minimum les bases d
 - ``Malo LOYER-VIAUD`` alias [@Karrwolf](https://github.com/Karrwolf) (ATTENTION Problème de GIT, Malo est aussi nommé [@LemonIceStuff](https://github.com/LemonIceStuff))
 
 ***
-![Logo Debian](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23b88179-ec54-450c-8969-d7913da8e013/d1rbqib-dae623c9-3c03-42f4-9778-52a76acb7347.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8yM2I4ODE3OS1lYzU0LTQ1MGMtODk2OS1kNzkxM2RhOGUwMTMvZDFyYnFpYi1kYWU2MjNjOS0zYzAzLTQyZjQtOTc3OC01MmE3NmFjYjczNDcuanBnIn1dXX0.CqOPQiOZP-4MpvHyMqfg9BOL2t613AYwjBrYy4WH5Bs "Le logo Debian")
+![Logo Linux](http://i.nextmedia.com.au/news/linux-logo.jpg)
+![Logo Débian](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23b88179-ec54-450c-8969-d7913da8e013/d1rbqib-dae623c9-3c03-42f4-9778-52a76acb7347.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8yM2I4ODE3OS1lYzU0LTQ1MGMtODk2OS1kNzkxM2RhOGUwMTMvZDFyYnFpYi1kYWU2MjNjOS0zYzAzLTQyZjQtOTc3OC01MmE3NmFjYjczNDcuanBnIn1dXX0.CqOPQiOZP-4MpvHyMqfg9BOL2t613AYwjBrYy4WH5Bs "Le logo Debian")
 
 ***
 *Nantes YNOV Campus - B2 Informatique - 2021/2022*
