@@ -77,7 +77,7 @@ Selectionner **Tout dans une seule partition** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation18.png)
 
 Séléctionner **Terminer** :
-![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation18.png)
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation19.png)
 
 Faites appliquer les changements en selectionnant **OUI** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation20.png)
