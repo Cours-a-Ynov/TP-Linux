@@ -106,7 +106,7 @@ Tout s'installera par la suite :
 Selctionner **OUI** pour que les demarrage ce fasse sur le programme **GRUB** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation28.png)
 
-Pour le choix du peripherique selectionner **/dev/sda** :
+Pour le choix du périphérique séléctionner **/dev/sda** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation29.png)
 
 Et voila votre machine est fini d'installer cliquez sur **Continuer** :
@@ -362,7 +362,7 @@ Voici le script a inscrire dans le fichier :
 ***
 ## 7- Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ? (option).
 
-D'apres moi il est mieux de l'installer sur un serveur appars car
+D'après moi il est mieux de l'installer sur un serveur appars car cela eviterai deja d'avoir des mails dans les sauvegardes du serveur **GLPI**.
 
 ***
 ## 8- Installer et configurer le service de messagerie (option).
@@ -421,10 +421,9 @@ Pour cela, nous devons procéder à l’installation de ces derniers:
 •apt-get install courier-authdaemon courier-base courier-imap courier-maildrop courier-pop courier-pop-ssl courier-imap-ssl
 •Aller dans l’onglet Fichier de Outlook
 •Cliquez sur Ajouter un compte•Configurer Manuellement les paramètres du serveur
-•Messagerie internetPage 5
-•Remplir le formulaire:Sandrine à maintenant son compte correctement configuré sur le client de messagerie:
-
-Maintenant, vous pouvez faire de même pour l’utilisateur ingrid!
+•Messagerie internet
+•Remplir le formulaire :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/mail1.png)
 
 ***
 ## 🔍 Source :
