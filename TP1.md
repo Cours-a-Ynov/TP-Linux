@@ -12,7 +12,8 @@
 7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#7--déterminer-si-le-serveur-de-messagerie-doit-être-installé-sur-le-même-serveur-que-glpi--option)
 8) [Installer et configurer le service de messagerie.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#8--installer-et-configurer-le-service-de-messagerie-option)
 9) [Installer et configurer le plugin d’envoi de mail.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#9--installer-et-configurer-le-plugin-denvoi-de-mail-option)
-10) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#-source-)
+10) [Conclusion]()
+11) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#-source-)
 
 ***
 ## 1- Mettre en place une machine virtuelle
@@ -432,6 +433,11 @@ Pour cela, nous devons procéder à l’installation de ces derniers:
 - Messagerie internet
 - Remplir le formulaire :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/mail1.png)
+
+***
+## 10- Conclusion.
+
+Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un gestionnaire libre de parc informatique (GLPI) puis de configurer une sauvegarde automatique via CRON et aussi la création d’une messagerie. De plus j’ai pu renforcer mes compétences dans la création de VM Windows et linux et la configuration des services réseaux.
 
 ***
 ## 🔍 Source :
