@@ -119,6 +119,14 @@ Pour avoir accès a internet allez dans les paramètre de la **VM** et dans **Ne
 ## 2- Configurer les services réseaux
 #### (Adresse IP, résolution DNS)
 
+Pour connaitre mon adresse IP je fait la commande suivante :
+~~~
+> ip a
+~~~
+
+Et je peut connaitre mon adresse **IP** au meme niveau que l'encadrer rouge ici meme :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ip1.png)
+
 ***
 ## 3- Configurer un outil de gestion de ticket
 #### (Installer et configurer GLPI, ajouter un Utilisateur, supprimer l’Utilisateur par défaut)
