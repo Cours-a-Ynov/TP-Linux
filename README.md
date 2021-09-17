@@ -1,5 +1,7 @@
 # 🐧 TP-Linux
 ***
+![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sbxinfo.fr%2Fimg%2Fslider%2F350-7-re-seau.jpg&f=1&nofb=1)
+***
 **Intervenant :** Clémence Caribaux
 ***
 Je fait ce document en prenant compte que vous connaissez un minimum les bases des commandes linux.
