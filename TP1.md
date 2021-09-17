@@ -28,7 +28,7 @@ Nous allons donc suite a tout ce qui a été fait précédement créer la VM en 
 Ensuite chercher le chemein ou vous avez mis le cd d'installation que vous avez telechargez au prealable :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation2.png)
 
-Séléctionnez **Linux** et chercher **Debian 10.x 64-bit**
+Séléctionnez **Linux** et chercher **Debian 10.x 64-bit** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation3.png)
 
 Renommer comme vous souhaitez le nom de la **VM** :
@@ -111,6 +111,10 @@ Pour le choix du peripherique selectionner **/dev/sda** :
 
 Et voila votre machine est fini d'installer cliquez sur **Continuer** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation30.png)
+
+
+Pour avoir accès a internet allez dans les paramètre de la **VM** et dans **Network Adapter** puis seletionner **Bridged** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ConfigInternet.png)
 
 ***
 ## 2- Configurer les services réseaux
