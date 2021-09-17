@@ -2,9 +2,10 @@
 ***
 **Intervenant :** Clémence Caribaux
 ***
-Je fait ce document en prenant compte que vous connaissez un minimum les base des commandes linux.
+Je fait ce document en prenant compte que vous connaissez un minimum les bases des commandes linux.
 ## Sommaire :
 1) [TPn°1 Services réseaux "17/09/2021"]()
+
     a. [Mettre en place une machine virtuelle]()
     b. [Configurer les services réseaux]()
     c. [Configurer un outil de gestion de ticket]()
@@ -15,10 +16,15 @@ Je fait ce document en prenant compte que vous connaissez un minimum les base de
     h. [Installer et configurer le service de messagerie.]()
     i. [Installer et configurer le plugin d’envoi de mail.]()
     j. [Source]()
+
 2) [TPn°2 Services réseau]()
+
     a.
+
 3) [TPn°3 Services réseaux]()
+
     a.
+    
 4) [Mot a retenir]()
 
 ***
