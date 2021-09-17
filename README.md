@@ -25,7 +25,7 @@ Je fait ce document en prenant compte que vous connaissez un minimum les bases d
 
     1)
 
-4) [Mot a retenir](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/motaretenir.md#mot-a-retenir-)
+4) [Mot à retenir](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/motaretenir.md#mot-a-retenir-)
 
 5) [Dossier des screen](https://github.com/Cours-a-Ynov/TP-Linux/tree/main/Image)
 
