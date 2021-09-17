@@ -12,7 +12,7 @@
 7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#7--déterminer-si-le-serveur-de-messagerie-doit-être-installé-sur-le-même-serveur-que-glpi--option)
 8) [Installer et configurer le service de messagerie.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#8--installer-et-configurer-le-service-de-messagerie-option)
 9) [Installer et configurer le plugin d’envoi de mail.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#9--installer-et-configurer-le-plugin-denvoi-de-mail-option)
-10) [Conclusion]()
+10) [Conclusion](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#10--conclusion)
 11) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#-source-)
 
 ***
