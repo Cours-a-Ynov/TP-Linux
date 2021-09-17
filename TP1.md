@@ -15,28 +15,24 @@ i) [Installer et configurer le plugin d’envoi de mail.]()
 j) [Source]()
 
 ***
-## Mettre en place une machine virtuelle
+## 1- Mettre en place une machine virtuelle
 #### (Configuration réseau, accès à Internet, SSH)
 
-Il va falloir allez dans les parametre de la VM pour que l'on puisse avoir acces a internet sur la simulation
+Pour installer **Debian11** il va falloir [Cliquez sur ce lien](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso) et alors vous téléchargerez **amd64 CD** :
 
-![img](../Image/1.png)
+Ainsi que **VMWorkstation** [Télécharger](https://www.vmware.com/go/getworkstation-win) et faites une installation classique de logiciel.
 
-Dans un premier temps il faut ce connecter sous superadmin grace a la commande "su" ensuite entre son MPD
 
-Nous faison ensuite les manipulation suivante :
-
-Nous ouvrons ensuite le cmd de notre PC et faison les commande suivantes :
 
 ***
-## Configurer les services réseaux
+## 2- Configurer les services réseaux
 #### (Adresse IP, résolution DNS)
 
 ***
-## Configurer un outil de gestion de ticket
+## 3- Configurer un outil de gestion de ticket
 #### (Installer et configurer GLPI, ajouter un Utilisateur, supprimer l’Utilisateur par défaut)
 
-Dans une premier il faut mettre a jour les packets avec la commande suivante:
+Dans un premier temps il faut mettre à jour les packets avec la commande suivante:
 ~~~
 > apt-get update && apt-get upgrade
 ~~~
@@ -51,29 +47,29 @@ Ainsi que **PHP** :
 > apt-get install php-imap php-ldap php-curl php-xmlrpc php-gd php-mysql php-cas
 ~~~
 
-On installe **MariaDB** en reponsant Y a toute les questions :
+On installe **MariaDB** en repondant Y à toute les questions :
 ~~~
 > apt-get install mariadb-server
 > mysql_secure_installation
 ~~~
 
-On installe les modules complementaires :
+On installe les modules complémentaires :
 ~~~
 > apt-get install apcupsd php-apcu
 ~~~
 
-On redemarre les service :
+On redemarre les services :
 ~~~
 > /etc/init.d/apache2 restart
 > /etc/init.d/mysql restart
 ~~~
 
-On entre dans les parametre de **MariaDB** :
+On entre dans les paramètres de **MariaDB** :
 ~~~
 > mysql -u root -p
 ~~~
 
-On créer ensuite la base de donner qui nosu permettra d'installer le **GLPI** on y met un nom d'utilisateur ainsi qu'un mot de passe :
+On crée ensuite la base de donnée qui nous permettra d'installer le **GLPI**, on y met un nom d'utilisateur ainsi qu'un mot de passe :
 ~~~
 MariaDB [(none)]> create database glpidb; 
 MariaDB [(none)]> grant all privileges on glpidb.* to glpiuser@localhost identified by "votre-mot-de-passe";
@@ -85,33 +81,33 @@ On installe **phpMyAdmin** :
 > apt-get install phpmyadmin
 ~~~
 
-On peut donc enfin installez GLPI en toute tranquilité et en ligne de commande :
+On peut donc enfin installer **GLPI** en toute tranquilité et en ligne de commande :
 ~~~
 > cd /usr/src/
 > wget https://github.com/glpi-project/glpi/releases/download/9.3.3/glpi-9.3.3.tgz
 > tar -xvzf glpi-9.3.3.tgz -C /var/www/html
 ~~~
 
-Nous allons ensuite donner les droit :
+Nous allons ensuite donner les droits :
 ~~~
 > chown -R www-data /var/www/html/glpi/
 ~~~
 
 Nous allons ensuite configurer **GLPI**.
-Il vas falloir allez sur l'adresse suivante :
+Il va falloir aller sur l'adresse suivante :
 ~~~
 http://*son adresse IP*/glpi
 ~~~
-Alors vous allez atterir sur cet page si.
+Alors vous allez atterir sur cette page si :
 ![](https://user.oc-static.com/upload/2019/01/29/15487708638493_image36.png)
 
-On appuie sur OK on accepte les therme et on clique sur continué.
+On appuie sur OK, on accepte les thermes et on clique sur continuer.
 ![](https://user.oc-static.com/upload/2019/01/29/15487709292633_image8.png)
 
-Ensuite nosu atterissons sur cette page et nous faisons **INSTALER**.
+Ensuite nous atterissons sur cette page et nous faisons **INSTALLER**.
 ![](https://user.oc-static.com/upload/2019/01/29/15487709822209_image23.png)
 
-Nous allons ensuite etre diriger sur cette page il faut verifier que tout soit avec une coche verte, et cliquer sur continuer. Si ce n'ets pas le cas il faut regler les probleme qui sont souvent les suivants :
+Nous allons ensuite être dirigé sur cette page, il faut verifier que tout soit avec une coche verte, et cliquer sur continuer. Si ce n'est pas le cas il faut régler les problemes qui sont souvent les suivants :
 
 S’il manque l’extension CAS, la commande est la suivante →  
 ~~~
@@ -125,21 +121,21 @@ etc.
 ![](https://user.oc-static.com/upload/2019/01/29/15487710173635_image6.png)
 
 Sur cette fenêtre, nous allons **associer GLPI à sa base de données** créée précédemment sur **MariaDB**.
-Il faut donc bien reprendre ce que l'on a rentrer dans MariaDB et non inventé des logs.
+Il faut donc bien reprendre ce que l'on a rentré dans MariaDB et non inventer des logs.
 Ensuite cliquer sur continuer.
 ![](https://user.oc-static.com/upload/2019/01/29/15487712420173_image28.png)
 
-Qaund vous atterisser sur cette page vous selectionner **glpidb** puis cliquer sur continuer.
+Qaund vous atterissez sur cette page vous selectionnez **glpidb** puis cliquez sur continuer.
 ![](https://user.oc-static.com/upload/2019/01/29/15487714238912_image12.png)
 
-Si vous avez cette page cela voudra dire que vous avez bien configuer le **GLPI** et donc cliquer sur continuer.
+Si vous avez cette page cela voudra dire que vous avez bien configué le **GLPI** et donc cliquez sur continuer.
 ![](https://user.oc-static.com/upload/2019/01/29/15487716041866_image34.png)
 
-L'installation est donc terminer on clique alors sur **Utiliser GLPI**.
+L'installation est donc terminée, on clique alors sur **Utiliser GLPI**.
 ![](https://user.oc-static.com/upload/2019/01/29/15487716699915_image9.png)
 
-Nous aterissons donc sur la page des login pour utiliser GLPI.
-Les identifiant de base son :
+Nous atterissons donc sur la page des login pour utiliser GLPI.
+Les identifiants de base sont :
 ~~~
 Identifiant : glpi
 Mot de passe : glpi
@@ -147,10 +143,10 @@ Mot de passe : glpi
 ![](https://user.oc-static.com/upload/2019/01/29/15487717733595_image2.png)
 
 ***
-## Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc
+## 4- Ajoutez au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc
 #### (Installer Fusion Inventory)
 
-Il va falloir allez dans le repertoir suivant et entrer les commandes qui suive pour pouvoir installer le plugin **FusionInventory** :
+Il va falloir aller dans le repertoire suivant et entrer les commandes qui suivent pour pouvoir installer le plugin **FusionInventory** :
 ~~~
 > cd /usr/src
 > wget https://github.com/fusioninventory/fusioninventory-for-glpi/archive/glpi9.3+1.3.tar.gz
@@ -162,7 +158,7 @@ Ainsi on lui attribue les droits :
 chown -R www-data /var/www/html/glpi/plugins
 ~~~
 
-On prepare la compatibilité en allans dans le dossier plugins :
+On prépare la compatibilité en allant dans le dossier plugins :
 ~~~
 > cd /var/www/html/glpi/plugins
 > mv fusioninventory-for-glpi-glpi9.3-1.3/ fusioninventory/
@@ -174,13 +170,13 @@ On retourne sur notre page de connexion au **GLPI**. On s'y connecte.
 Une fois connecté, rendez vous dans la rubrique suivante : Configuration > Plugins :
 ![](https://user.oc-static.com/upload/2019/01/29/15487727238486_image11.png)
 
-On atterit donc sur cette page ci si tout est bon nous devrions voir le plugins d'afficher. Si c'est le cas vous allez pouvoir cliquer sur **Installer**. Ensuite un bouton **Activer** s'affichera cliquer dessus.
+On atterit donc sur cette page ci si tout est bon, nous devrions voir le plugins s'afficher. Si c'est le cas vous allez pouvoir cliquez sur **Installer**. Ensuite un bouton **Activer** s'affichera, cliquez dessus.
 ![](https://user.oc-static.com/upload/2019/01/29/15487727999289_image21.png)
 
 Rendez-vous dans : Administration > FusionInventory. Ou nous voyons le menu de configuration. Un message d'erreur s'affiche indiquant que (une absence de cron.php du GLPI dans le cron de Linux).
 ![](https://user.oc-static.com/upload/2019/01/29/15487729341367_image19.png)
 
-Nous allons donc resoudre le probleme
+Nous allons donc résoudre le problème :
 ~~~
 > crontab -u www-data -e
 ~~~
@@ -189,7 +185,7 @@ Nous allons donc resoudre le probleme
 */1 * * * * /usr/bin/php5 /var/www/html/glpi/front/cron.php &>/dev/null
 ~~~
 
-Redmarrer ensuite daemon du **cron** avec la commande suivante :
+Redmarrez ensuite daemon du **cron** avec la commande suivante :
 ~~~
 > /etc/init.d/cron restart
 ~~~
@@ -203,7 +199,7 @@ Si vous retournez dans : Administration > FusionInventory, le message d’erreur
 ![](https://user.oc-static.com/upload/2019/01/29/1548773509188_image17.png)
 
 ***
-## Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI
+## 5- Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI
 #### GLPI (Fusion Inventory)
 
 Pour télécharger l’agent Fusion 2.4.2 pour Windows (64 bit), [cliquez sur ce lien de téléchargement](https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.4.2/fusioninventory-agent_windows-x64_2.4.2.exe).
@@ -235,7 +231,7 @@ Vous trouverez alors la liste des agents remontés dans FusionInventory. Vous de
 ![](https://user.oc-static.com/upload/2019/01/29/15487763919247_image3.png)
 
 ***
-## Mettre en place une sauvegarde de GLPI
+## 6- Mettre en place une sauvegarde de GLPI
 #### (Configurer une tâche CRON)
 
 Nous allons créer un script qui s’exécutera quotidiennement (pour l'exemple) il est à placer dans le dossier :
@@ -273,12 +269,12 @@ Voici le script a inscrire dans le fichier :
 ~~~
 
 ***
-## Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ? (option).
+## 7- Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ? (option).
 
 D'apres moi il est mieux de l'installer sur un serveur appars car
 
 ***
-## Installer et configurer le service de messagerie (option).
+## 8- Installer et configurer le service de messagerie (option).
 
 Postfix est un serveur de messagerie électroniquesous licencepublique. Il est utilisé pour l’acheminement de courriers électroniques. Il l’uns des nombreux logiciels de messagerie existants tel que Sendmail.Il est communémentappelé MTA (Message Transport Agent)
 ~~~
@@ -323,7 +319,7 @@ tail -30 /var/log/syslog
 pour avoir un rapport détaillé de ce qui s’est déroulé.
 
 ***
-## Installer et configurer le plugin d’envoi de mail (option).
+## 9- Installer et configurer le plugin d’envoi de mail (option).
 
 Dans cette partie nous allons utiliser Outlook version 2010.Avant toutes choses, il faut savoir ce qu’est un serveur pop et smtp:
 •Pop.[nomDeDomaine] représente le serveur de courrier entrant
@@ -341,6 +337,7 @@ Maintenant, vous pouvez faire de même pour l’utilisateur ingrid!
 
 ***
 ## 🔍 Source :
+#### - [Numetopia](https://www.numetopia.fr/comment-parametrer-virtualbox-pour-acceder-au-reseau-local/)
 #### - [Neptunet](https://neptunet.fr/install-glpi/)
 #### - [Open Classroom](https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi/5993816-installez-votre-serveur-glpi)
 #### - [Open Classroom](https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi/5994176-installez-le-plugin-et-l-agent-fusioninventory)
