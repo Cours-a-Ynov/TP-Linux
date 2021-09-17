@@ -6,24 +6,24 @@ Je fait ce document en prenant compte que vous connaissez un minimum les bases d
 ## Sommaire :
 1) [TPn°1 Services réseaux "17/09/2021"]()
 
-    I) [Mettre en place une machine virtuelle]()
-    II) [Configurer les services réseaux]()
-    III) [Configurer un outil de gestion de ticket]()
-    IV) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
-    V) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
-    VI) [Mettre en place une sauvegarde de GLPI]()
-    VII) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
-    VIII) [Installer et configurer le service de messagerie.]()
-    IX) [Installer et configurer le plugin d’envoi de mail.]()
-    X) [Source]()
+    1) [Mettre en place une machine virtuelle]()
+    2) [Configurer les services réseaux]()
+    3) [Configurer un outil de gestion de ticket]()
+    4) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
+    5) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
+    6) [Mettre en place une sauvegarde de GLPI]()
+    7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
+    8) [Installer et configurer le service de messagerie.]()
+    9) [Installer et configurer le plugin d’envoi de mail.]()
+    10) [Source]()
 
 2) [TPn°2 Services réseau]()
 
-    a.
+    1)
 
 3) [TPn°3 Services réseaux]()
 
-    a.
+    1)
 
 4) [Mot a retenir]()
 
