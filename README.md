@@ -4,18 +4,18 @@
 ***
 Je fait ce document en prenant compte que vous connaissez un minimum les bases des commandes linux.
 ## Sommaire :
-1) [TPn°1 Services réseaux "17/09/2021"]()
+1) [TPn°1 Services réseaux "17/09/2021"](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
 
-    1) [Mettre en place une machine virtuelle]()
-    2) [Configurer les services réseaux]()
-    3) [Configurer un outil de gestion de ticket]()
-    4) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
-    5) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
-    6) [Mettre en place une sauvegarde de GLPI]()
-    7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
-    8) [Installer et configurer le service de messagerie.]()
-    9) [Installer et configurer le plugin d’envoi de mail.]()
-    10) [Source]()
+    1) [Mettre en place une machine virtuelle](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    2) [Configurer les services réseaux](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    3) [Configurer un outil de gestion de ticket](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    4) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    5) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    6) [Mettre en place une sauvegarde de GLPI](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    8) [Installer et configurer le service de messagerie.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    9) [Installer et configurer le plugin d’envoi de mail.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+    10) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
 
 2) [TPn°2 Services réseau]()
 
