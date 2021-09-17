@@ -3,16 +3,16 @@
 # 🐧 TPn°1
 
 ## Sommaire :
-a) [Mettre en place une machine virtuelle]()
-b) [Configurer les services réseaux]()
-c) [Configurer un outil de gestion de ticket]()
-d) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc]()
-e) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI]()
-f) [Mettre en place une sauvegarde de GLPI]()
-g) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?]()
-h) [Installer et configurer le service de messagerie.]()
-i) [Installer et configurer le plugin d’envoi de mail.]()
-j) [Source]()
+1) [Mettre en place une machine virtuelle](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+2) [Configurer les services réseaux](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+3) [Configurer un outil de gestion de ticket](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+4) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+5) [Mettre en place un poste client Windows 10 et remonter le poste client dans l’inventaire GLPI](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+6) [Mettre en place une sauvegarde de GLPI](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+7) [Déterminer si le serveur de messagerie doit être installé sur le même serveur que GLPI ?](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+8) [Installer et configurer le service de messagerie.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+9) [Installer et configurer le plugin d’envoi de mail.](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
+10) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
 
 ***
 ## 1- Mettre en place une machine virtuelle
