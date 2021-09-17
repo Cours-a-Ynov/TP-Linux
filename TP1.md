@@ -112,8 +112,7 @@ Pour le choix du peripherique selectionner **/dev/sda** :
 Et voila votre machine est fini d'installer cliquez sur **Continuer** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation30.png)
 
-
-Pour avoir accès a internet allez dans les paramètre de la **VM** et dans **Network Adapter** puis seletionner **Bridged** :
+Pour avoir accès a internet allez dans les paramètre de la **VM** et dans **Network Adapter** puis seletionnez **Bridged** :
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ConfigInternet.png)
 
 ***
