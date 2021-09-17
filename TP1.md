@@ -438,7 +438,7 @@ Pour cela, nous devons procéder à l’installation de ces derniers:
 ***
 ## 10- 📈 Axes d'améliorations.
 
-
+J'ai vraiment trouvé le cours sympathique à apprendre surtout en manipulant. Cependant j'aurais aimé que l'on est des moments ou l'on se réunit pour voir ou tout le monde se situe et si des questions sont  à poser ou des informations pouvant être données soient mise en commun.
 
 ***
 ## 11- Conclusion.
