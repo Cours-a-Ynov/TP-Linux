@@ -3,13 +3,13 @@
 # 🐧 TPn°2
 
 ## Sommaire :
-1) [Mettre en place une machine virtuelle](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#1--mettre-en-place-une-machine-virtuelle)
-2) [Configurer les services réseaux](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#2--configurer-les-services-réseaux)
-3) [Configurer un outil de gestion de ticket](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#3--configurer-un-outil-de-gestion-de-ticket)
-4) [Ajouter au serveur un plugin de remontée de poste client pour pouvoir réaliser l’inventaire du parc](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#4--ajoutez-au-serveur-un-plugin-de-remontée-de-poste-client-pour-pouvoir-réaliser-linventaire-du-parc)
-5) [Axes d'améliorations](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#10---axes-daméliorations)
-6) [Conclusion](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#10--conclusion)
-7) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP1.md#-source-)
+1) [Mettre en place une machine virtuelle](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#1--mettre-en-place-une-machine-virtuelle)
+2) [Configurer les services réseaux](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#2--configurer-les-services-réseaux)
+3) [Configurer les services Web](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#3--configurer-les-services-web)
+4) [Mise en place d’une solution de haute-disponibilité](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#4--mise-en-place-dune-solution-de-haute-disponibilité)
+5) [Axes d'améliorations](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#5---axes-daméliorations)
+6) [Conclusion](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#6--conclusion)
+7) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#-source-)
 
 ***
 ## 1- Mettre en place une machine virtuelle
