@@ -128,7 +128,83 @@ Et je peut connaitre mon adresse **IP** au meme niveau que l'encadrer rouge ici 
 ## 3- Configurer les services Web
 ### (Créer un site Web, nom de domaine, certificat SSL)
 
+Un serveur web est un logiciel permettant de rendre accessibles à de nombreux ordinateurs (les clients) des pages web stockées sur le disque. Cette fiche pratique explique comment installer le serveur web Apache sur un système de type UNIX (typiquement une distribution de Linux telle que RedHat, Mandrake ou n'importe quelle autre).
 
+Pour cela quelques connaissances sur Linux ou bien Unix sont nécessaires. Le but de cette fiche va être d'être capable de récupérer les sources des différents éléments nécessaires et de les compiler (un compilateur C est donc nécessaire, il est généralement installé par défaut sur la plupart des distributions Linux) afin d'avoir un système opérationnel.
+
+L'installation suivante comprend l'installation de l'interpréteur PHP, un langage de programmation permettant de créer des pages créées dynamiquement, ainsi que le SGBD MySQL, un système de gestion de bases de données relationnelles puissant fonctionnant sous Linux (et gratuit!).
+
+Télécharger les sources
+Les sources de PHP peuvent être téléchargées sur le site https://www.php.net/
+Les sources de Apache peuvent être téléchargées sur le site http://www.apache.org
+Les sources de MySQL peuvent être téléchargées sur le site http://www.mysql.org
+installer Apache et PHP
+Décompresser les archives
+~~~
+tar zxvf apache_1.3.x.tar.gz  
+tar zxvf php-3.0.x.tar
+~~~
+Configurer Apache
+~~~
+cd apache_1.3.x  
+./configure --prefix=/www
+~~~
+Configurer PHP
+~~~
+cd ../php-3.0.x  
+./configure --with-mysql --with-apache=../apache_1.3.x --enable-track-vars
+~~~
+Compiler PHP
+Si vous préférez installer PHP dans un autre répertoire, il faut utiliser l'option de configuration --with-config-file-path=/path
+~~~
+make  
+make install
+~~~
+Installer Apache
+~~~
+cd ../apache_1.3.x  
+./configure --prefix=/www --activate-module=src/modules/php3/libphp3.a  
+make  
+make install
+~~~
+Modifier le fichier de configuration de PHP
+~~~
+cd ../php-3.0.x  
+cp php3.ini-dist /usr/local/lib/php3.ini
+~~~
+
+Vous pouvez désormais éditer le fichier de configuration /usr/local/lib/php3.ini.
+Editez le fichier de configuration du serveur apache (généralement httpd.conf ou srm.conf et ajoutez la ligne suivante :
+~~~
+AddType application/x-httpd-php .php
+~~~
+Il s'agit de choisir l'extension associée aux scripts PHP. Par souci d'homogénéité, il est courant de choisir l'extension .php
+
+Démarrez le serveur Apache.
+(Il est essentiel d'arrêter et redémarrer le serveur, et non uniquement de le relancer. Il suffit généralement de taper apachectl stop, puis apachectl start).
+
+Premier lancement
+Pour vérifier si l'installation a bien fonctionnée, il vous suffit de créer un petit fichier dans la racine des documents du serveur web (appelée DocumentRoot dans le fichier de configuration httpd.conf). Nommez ce fichier toto.php, et mettez le code suivant dans ce fichier :
+
+~~~
+<html>  
+<head><title>Exemple</title></head>  
+<body>  
+<?php  
+echo "PHP fonctionne!";  
+?>  
+</body>  
+</html>
+~~~
+
+Lancez un navigateur sur cette machine et entrez l'URL suivante :
+~~~
+http://localhost/toto.php
+~~~
+
+localhost désigne la machine sur laquelle vous vous trouvez...
+
+Vous devriez logiquement voir apparaître la phrase "PHP fonctionne!" sur votre navigateur !
 
 ***
 ## 4- Mise en place d’une solution de haute-disponibilité
