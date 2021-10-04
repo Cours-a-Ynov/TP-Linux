@@ -116,3 +116,29 @@ Et je peut connaitre mon adresse **IP** au meme niveau que l'encadrer rouge ici 
 ![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ip1.png)
 
 ***
+## 3- Configurer les services Web
+### (Créer un site Web, nom de domaine, certificat SSL)
+
+
+
+***
+## 4- Mise en place d’une solution de haute-disponibilité
+### (Configurer Corosync, Pacemaker).
+
+
+***
+## 5- 📈 Axes d'améliorations.
+
+J'ai vraiment trouvé le cours sympathique à apprendre surtout en manipulant. Cependant j'aurais aimé que l'on est des moments ou l'on se réunit pour voir ou tout le monde se situe et si des questions sont  à poser ou des informations pouvant être données soient mise en commun.
+
+***
+## 6- Conclusion.
+
+Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un gestionnaire libre de parc informatique (GLPI) puis de configurer une sauvegarde automatique via CRON et aussi la création d’une messagerie. De plus j’ai pu renforcer mes compétences dans la création de VM Windows et linux et la configuration des services réseaux.
+
+***
+## 🔍 Source :
+####
+
+***
+[← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux#-tp-linux)
