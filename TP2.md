@@ -1,3 +1,118 @@
 [← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux#-tp-linux)
 
 # 🐧 TPn°2
+
+
+## 1- Mettre en place une machine virtuelle
+#### (Configuration réseau, accès à Internet, SSH)
+
+Pour installer **Debian11** il va falloir [Cliquez sur ce lien](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso) et alors vous téléchargerez **amd64 CD** :
+
+Ainsi que **VMWorkstation** [Télécharger](https://www.vmware.com/go/getworkstation-win) et faites une installation classique de logiciel.
+
+Nous allons donc suite a tout ce qui a été fait précédement créer la VM en cliquant sur **create a new machine** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/Creation1.png)
+
+Ensuite chercher le chemein ou vous avez mis le cd d'installation que vous avez telechargez au prealable :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation2.png)
+
+Séléctionnez **Linux** et chercher **Debian 10.x 64-bit** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation3.png)
+
+Renommer comme vous souhaitez le nom de la **VM** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation4.png)
+
+Attribuez le nombre d'espace local a votre **VM** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation5.png)
+
+Verifiez que tout est bon ajoutez de la ram si vous le souhaitez :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation6.png)
+
+Ensuite lancez la **VM** et faite **entrer** sur **Install** pour une installation normale :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation7.png)
+
+Selectionner la langue Francaise ou celle que vous voulez et ce trois fois de suite :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation8.png)
+
+Cela va ensuite charger et installer :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation9.png)
+
+Faite **entre** pas besion de modifier debian :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation10.png)
+
+Ne rien ecrire juste faire **entrer** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation11.png)
+
+Faites votre mot de passe **ADMIN** il faudra ensuite le valider :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation12.png)
+
+Il faudra ensuite creer un utilisateur mettez le nom de votre choix :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation13.png)
+
+Faite entrer l'identifiant sauf si vous souhaitez le modifier :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation14.png)
+
+Creer ensuite le mot de passe de l'utilisateur et confimez le :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation15.png)
+
+Enuite selectionner **utiliser un disque entier** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation15.png)
+
+Faites **entrer** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation17.png)
+
+Selectionner **Tout dans une seule partition** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation18.png)
+
+Séléctionner **Terminer** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation19.png)
+
+Faites appliquer les changements en selectionnant **OUI** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation20.png)
+
+Le systeme va s'installer :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation21.png)
+
+Mettez **NON** au analyse :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation22.png)
+
+Selectionner la langue **Francaise** ou celle de votre choix :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation23.png)
+
+Selectionner **deb.debian.org** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation24.png)
+
+N'entrez rien faites juste entrer :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation25.png)
+
+Par la suite faites le choix suivants et surtout selectionner **server SSH** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation26.png)
+
+Tout s'installera par la suite :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation27.png)
+
+Selctionner **OUI** pour que les demarrage ce fasse sur le programme **GRUB** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation28.png)
+
+Pour le choix du périphérique séléctionner **/dev/sda** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation29.png)
+
+Et voila votre machine est fini d'installer cliquez sur **Continuer** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/creation30.png)
+
+Pour avoir accès a internet allez dans les paramètre de la **VM** et dans **Network Adapter** puis seletionnez **Bridged** :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ConfigInternet.png)
+
+***
+## 2- Configurer les services réseaux
+#### (Adresse IP, résolution DNS)
+
+Pour connaitre mon adresse IP je fait la commande suivante :
+~~~
+> ip a
+~~~
+
+Et je peut connaitre mon adresse **IP** au meme niveau que l'encadrer rouge ici meme :
+![](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/Image/ip1.png)
+
+***
