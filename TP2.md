@@ -368,7 +368,7 @@ fi
 ***
 ## 5- Conclusion.
 
-Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un site Web, un nom de domaine, et un certificat SSL. J'ai aussi pu 
+Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un site Web, un nom de domaine, et un certificat SSL. J'ai aussi pu apprendre a installer et configurer corosync et pacemaker.
 
 ***
 ## 🔍 Source :
