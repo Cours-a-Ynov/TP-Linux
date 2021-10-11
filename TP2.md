@@ -209,6 +209,161 @@ Vous devriez logiquement voir apparaître la phrase "PHP fonctionne!" sur votre 
 ## 4- Mise en place d’une solution de haute-disponibilité
 ### (Configurer Corosync, Pacemaker).
 
+Installation du cluster
+Mise à jour du système :
+~~~
+apt update && apt full-upgrade
+~~~
+Installation des paquets pour la HA :
+~~~
+apt install pacemaker corosync crmsh
+~~~
+
+Configuration du cluster HA
+Modifier le fichiers hosts des deux serveurs :
+~~~
+nano /etc/hosts
+~~~
+~~~
+10.xx.xx.243           wan-master
+10.xx.xx.244           wan-slave
+~~~
+Synchroniser les deux serveurs sur un serveur de temps : https://memo-linux.com/timedatectl-loutil-de-systemd-pour-regler-lheure-et-la-date/
+Ouvrir les port UDP 5404 et 5405 en entrée et sortie :
+~~~
+iptables -I INPUT -m state --state NEW -p udp -m multiport --dports 5404,5405 -j ACCEPT
+iptables -I OUTPUT -m state --state NEW -p udp -m multiport --sports 5404,5405 -j ACCEPT
+~~~
+Générer la clé authentification pour la communication de corosync entre les deux serveurs :
+~~~
+corosync-keygen
+~~~
+Copier le fichier authkey vers l’autre serveur :
+~~~
+scp /etc/corosync/authkey root@wan-slave:/etc/corosync/
+~~~
+Faire une copie de la configuration de corosync :
+~~~
+mv  /etc/corosync/corosync.conf /etc/corosync/corosync.back
+~~~
+Créer la nouvelle configuration de corosync :
+~~~
+nano  /etc/corosync/corosync.conf
+~~~
+~~~
+logging {
+  debug: off
+  to_syslog: yes
+}
+nodelist {
+  node {
+    name: wan-master
+    nodeid: 1
+    quorum_votes: 1
+    ring0_addr: 10.xx.xx.243
+  }
+  node {
+    name: wan-slave
+    nodeid: 2
+    quorum_votes: 1
+    ring0_addr: 10.xx.xx.244
+  }
+}
+quorum {
+  provider: corosync_votequorum
+}
+totem {
+  cluster_name: cluster-ha
+  config_version: 3
+  ip_version: ipv4
+  secauth: on
+  version: 2
+  interface {
+    bindnetaddr: 10.xx.xx.243
+    ringnumber: 0
+  }
+}
+~~~
+Copier le fichier corosync.conf vers l’autre serveur :
+~~~
+scp /etc/corosync/corosync.conf root@wan-slave:/etc/corosync/
+~~~
+Désactiver deux fonctionnalités inutile pour notre cluster :
+stonith « shot the other node in the head » permet lorsqu’une machine n’est plus joignable d’être sur que cette machine soit bien hors ligne mais nécessite la gestion du fencing (gestion matériel avec par exemple ipmi).
+~~~
+crm configure property stonith-enabled=false
+~~~
+quorum indique le nombre minimal de membres pour prendre une décision. Ce paramètre est utile pour des clusters à partir de trois machines.
+~~~
+crm configure property no-quorum-policy=ignore 
+~~~
+Démarrer les services corosync et pacemaker :
+~~~
+systemctl start corosync
+systemctl start pacemaker
+~~~
+Vérification de l’état du cluster :
+~~~
+crm status
+~~~
+Configurer les IP virtuelles
+~~~
+crm configure primitive virtual_ip_eth1 ocf:heartbeat:IPaddr2 params ip="10.xx.xx.246" cidr_netmask="29" nic="bond0" op monitor interval="10s" timeout="20" meta failure-timeout="5"
+~~~
+~~~
+crm configure primitive virtual_ip_eth2 ocf:heartbeat:IPaddr2 params ip="E192.168.yy.4" cidr_netmask="24" nic="bond1" op monitor interval="10s" timeout="20" meta failure-timeout="5"
+~~~
+~~~
+crm configure primitive virtual_ip_eth3 ocf:heartbeat:IPaddr2 params ip="192.168.zz.251" cidr_netmask="23" nic="bond2" op monitor interval="10s" timeout="20" meta failure-timeout="5"
+~~~
+~~~
+crm configure primitive virtual_ip_eth4 ocf:heartbeat:IPaddr2 params ip="10.ww.ww.251" cidr_netmask="26" nic="bond3" op monitor interval="10s" timeout="20" meta failure-timeout="5"
+~~~
+Créer un groupe de ressources :
+~~~
+crm configure group grpipv virtual_ip_eth1 virtual_ip_eth2 virtual_ip_eth3 virtual_ip_eth4
+~~~
+Désigner le nœud wan-master comme prioritaire pour le groupe :
+~~~
+crm configure location grpipv-location grpipv 50: wan-master
+~~~
+Vérification du cluster :/
+~~~
+crm status
+~~~
+Ajouter des services au cluster
+Dans mon cas, je ne vais ajouter qu’un seul service, l’envoie de mail lors d’un basculement d’état des serveurs :
+
+Ajout alerte mail :
+~~~
+crm configure primitive MailToAdmin ocf:heartbeat:MailTo params  email=admin@domaine.tld op monitor depth="0" timeout="10" interval="10"
+~~~
+Ce service est cloné pour qu’il soit actif sur les deux serveurs en même temps :
+~~~
+crm configure clone clone-MailToAdmin MailToAdmin
+~~~
+Vérification du cluster :
+~~~
+crm status
+~~~
+Monitorer l’état du branchement du câble réseau sur la carte Ethernet
+Par défaut (bug ?), pacemaker de prend pas en charge le débranchement/coupure du câble réseau sur l’interface.
+
+Éditer le module IPaddr2 :
+~~~
+nano /usr/lib/ocf/resource.d/heartbeat/IPaddr2
+~~~
+Changer le contenu (ligne 942) de la fonction ip_monitor() par :
+~~~
+{
+t=$(ip link show "$NIC" | grep -c "state UP")
+if [ "$t" = "0" ];then
+return "$OCF_ERR_PERM"
+else 
+return "$OCF_SUCCESS"
+fi
+}
+~~~
 
 ***
 ## 5- Conclusion.
@@ -218,6 +373,7 @@ Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a app
 ***
 ## 🔍 Source :
 ####
+[ClusterLabs](https://clusterlabs.org)
 
 ***
 [← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux#-tp-linux)
