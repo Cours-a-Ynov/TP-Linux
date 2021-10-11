@@ -23,5 +23,12 @@
 - **Adresse IP** : Une adresse IP est un numéro d'identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l'Internet Protocol. L'adresse IP est à la base du système d'acheminement des paquets de données sur Internet.
 
 ***
+- **Cluster** : Littéralement un cluster est une « grappe », en informatique on parlera donc de grappe d’ordinateurs comme on peut aussi parler de grappe de disques durs pour le RAID. Disposer d’un cluster revient à disposer de plusieurs serveurs formant une seule entité. Il existe deux types d’utilisations pour les clusters :
+
+Le calcul distribué, ici on utilise la puissance de calcul de toutes les machines du cluster afin de réaliser de grandes opérations arithmétiques. Ils sont souvent utilisés dans les laboratoires de recherches ou les calculs météorologiques.
+La haute disponibilité des infrastructures notamment dans l’utilisation du load-balancing (répartition de charge entre serveurs).
+Cela à pour but de favoriser la continuité de service. Dans ce cadre là toutes les machines physiques ne forment qu’une machine logique et le gestionnaire de cluster gère le failover (basculement) en cas de panne d’un noeud.
+
+***
 
 [← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/README.md#-tp-linux)
