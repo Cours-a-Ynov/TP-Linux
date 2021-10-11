@@ -368,13 +368,16 @@ fi
 ***
 ## 5- Conclusion.
 
-Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un gestionnaire libre de parc informatique (GLPI) puis de configurer une sauvegarde automatique via CRON et aussi la création d’une messagerie. De plus j’ai pu renforcer mes compétences dans la création de VM Windows et linux et la configuration des services réseaux.
+Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un site Web, un nom de domaine, et un certificat SSL. J'ai aussi pu 
 
 ***
 ## 🔍 Source :
 ####
 #### - [Lone Wolf](https://howto.landure.fr/gnu-linux/debian-4-0-etch/creer-un-certificat-ssl-multi-domaines)
 #### - [ClusterLabs](https://clusterlabs.org)
+
+***
+(https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Linux-Server-Distros-Featured.jpg)
 
 ***
 [← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux#-tp-linux)
