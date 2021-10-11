@@ -377,7 +377,7 @@ Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a app
 #### - [ClusterLabs](https://clusterlabs.org)
 
 ***
-(https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Linux-Server-Distros-Featured.jpg)
+![Server Linux](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Linux-Server-Distros-Featured.jpg)
 
 ***
 [← Retour à la page principale](https://github.com/Cours-a-Ynov/TP-Linux#-tp-linux)
