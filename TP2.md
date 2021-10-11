@@ -7,9 +7,8 @@
 2) [Configurer les services réseaux](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#2--configurer-les-services-réseaux)
 3) [Configurer les services Web](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#3--configurer-les-services-web)
 4) [Mise en place d’une solution de haute-disponibilité](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#4--mise-en-place-dune-solution-de-haute-disponibilité)
-5) [Axes d'améliorations](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#5---axes-daméliorations)
-6) [Conclusion](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#6--conclusion)
-7) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#-source-)
+5) [Conclusion](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#6--conclusion)
+6) [Source](https://github.com/Cours-a-Ynov/TP-Linux/blob/main/TP2.md#-source-)
 
 ***
 ## 1- Mettre en place une machine virtuelle
@@ -212,12 +211,7 @@ Vous devriez logiquement voir apparaître la phrase "PHP fonctionne!" sur votre 
 
 
 ***
-## 5- 📈 Axes d'améliorations.
-
-J'ai vraiment trouvé le cours sympathique à apprendre surtout en manipulant. Cependant j'aurais aimé que l'on est des moments ou l'on se réunit pour voir ou tout le monde se situe et si des questions sont  à poser ou des informations pouvant être données soient mise en commun.
-
-***
-## 6- Conclusion.
+## 5- Conclusion.
 
 Pour conclure j’ai pu répondu à tout les objectifs demander. Le TP m’a appris à créer un gestionnaire libre de parc informatique (GLPI) puis de configurer une sauvegarde automatique via CRON et aussi la création d’une messagerie. De plus j’ai pu renforcer mes compétences dans la création de VM Windows et linux et la configuration des services réseaux.
 
